@@ -56,30 +56,12 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-# default PS1:
-#if [ "$color_prompt" = yes ]; then
-#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w \$\[\033[00m\] '
-#else
-#    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-#fi
 unset color_prompt force_color_prompt
-
-# more default PS1 stuff:
-# If this is an xterm set the title to user@host:dir
-#case "$TERM" in
-#xterm*|rxvt*)
-#    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-#    ;;
-#*)
-#    ;;
-#esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -91,14 +73,12 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias lal='ls -alh'
 alias lll='ls -alh'
-#alias l='ls -CF'
 alias l='ls -lh'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -119,9 +99,6 @@ GREEN='\[\033[0;32m\]'
 PURPLE='\[\033[0;35m\]'
 RED='\e[0;31m'
 
-# uptime && users
-#fortune | cowsay -f dalek
-#echo -e "$RED"
 curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A 7 \<p\> | sed 's/<[^>]\+>//g' | cowsay -f dalek
 echo -e "$CYAN"
 
@@ -235,6 +212,8 @@ alias sl='sl -ael'
 # see http://scribblebound.com/2014-02-22.html
 alias snake='telnet telnet.bitlag.net'
 alias sprunge='curl -F '"'"'sprunge=<-'"'"' http://sprunge.us'
+# escape character is x (not CTRL+X)
+alias starwars='telnet -e x towel.blinkenlights.nl'
 alias su='sudo -i'
 alias u='uptime && users'
 alias unmount='umount'
