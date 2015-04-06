@@ -7,4 +7,5 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-
+" show line numbers http://vim.wikia.com/wiki/Display_line_numbers
+set number
