@@ -9,9 +9,12 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias ..='cd ..'
+alias archive='curl http://web.archive.org/save/$1'
+alias archive-check='curl http://web.archive.org/web/*/$1'
+alias archive-wget='wget http://web.archive.org/save/$1'
 alias bomb='echo ${bashForkBomb}'
 alias c='clear'
-alias check-log='cat /var/log/auth.log | grep fail'
+alias check-log='sudo cat /var/log/auth.log | grep fail'
 alias cp='cp -r'
 alias df='df -h'
 alias diff='colordiff'
