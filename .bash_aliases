@@ -11,6 +11,7 @@ fi
 alias ..='cd ..'
 alias archive='curl http://web.archive.org/save/$1'
 alias archive-check='curl http://web.archive.org/web/*/$1'
+alias archive-save='curl http://web.archive.org/save/$1'
 alias archive-wget='wget http://web.archive.org/save/$1'
 alias bomb='echo ${bashForkBomb}'
 alias c='clear'
