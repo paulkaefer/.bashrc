@@ -9,10 +9,6 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias ..='cd ..'
-alias archive='curl http://web.archive.org/save/$1'
-alias archive-check='curl http://web.archive.org/web/*/$1'
-alias archive-save='curl http://web.archive.org/save/$1'
-alias archive-wget='wget http://web.archive.org/save/$1'
 alias bomb='echo ${bashForkBomb}'
 alias c='clear'
 alias check-log='sudo cat /var/log/auth.log | grep fail'
@@ -28,6 +24,7 @@ alias gh='history | grep'
 alias google='w3m google.com'
 alias h='history'
 alias html='sudo python /home/paul/Programming/python/makeHTML.py'
+alias ia-save='ia-save'
 # IRC client was 'irssi', 'weechat-curses'
 alias irc='weechat'
 alias konami='echo up, up, down, down, left, right, left, right, B, A, Start'
