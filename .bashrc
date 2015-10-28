@@ -127,7 +127,12 @@ function pause() {
 bashForkBomb=":(){ :|:& };:";
 
 # via https://gist.github.com/atomotic/721aefe8c72ac095cb6e
-ia-save() { curl -s -I "https://web.archive.org/save/$1" | grep Content-Location | awk '{print "https://web.archive.org"$2}'; }
+# with help from http://stackoverflow.com/questions/33384283/using-awk-in-bashrc-function
+function ia-save() {
+    curl -s -I "https://web.archive.org/save/$1" |
+    grep Content-Location |
+    awk '{printf( "https://web.archive.org/%s\n",$2)}';
+}
 
 # Alias definitions.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
