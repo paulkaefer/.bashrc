@@ -74,7 +74,7 @@ GREEN='\[\033[0;32m\]'
 PURPLE='\[\033[0;35m\]'
 RED='\e[0;31m'
 
-curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A 6 \<td\> | sed 's/<[^>]\+>//g' | cowsay -f dalek
+curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A 5 \<td\> | sed 's/<[^>]\+>//g' | cowsay -f dalek
 echo -e "$CYAN"
 
 echo
@@ -109,7 +109,7 @@ mkdircd() {
 QuoteOfTheDay() {
     if [ -z "$1" ]
     then
-        curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A 6 \<td\> | sed 's/<[^>]\+>//g' | cowsay -f kilroy
+        curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A 5 \<td\> | sed 's/<[^>]\+>//g' | cowsay -f kilroy
     else
         curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A "$1" \<td\> | sed 's/<[^>]\+>//g' | cowsay -f kilroy
     fi

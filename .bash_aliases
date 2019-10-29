@@ -9,6 +9,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias ..='cd ..'
+#alias 4 8 15 16 23 42="reload"
 alias bomb='echo ${bashForkBomb}'
 alias c='clear'
 alias check-log='sudo cat /var/log/auth.log | grep fail'
@@ -37,6 +38,7 @@ alias length='Length'
 # from http://www.reddit.com/r/linux4noobs/comments/2hqdq1/i_uploaded_some_scripts_that_just_make_a_gnulinux/ckw0jli
 alias ll='ls -lh'
 alias lll='ls -alh'
+alias LOST='PS1="${GREEN}>: "'
 alias lsd='ls -ld */'
 alias matlab='sudo octave'
 alias mcd='mkdircd'
@@ -88,8 +90,9 @@ alias usb1='sudo mount -t vfat -o uid=paul,gid=pi /dev/sda1 /media/usbstick/'
 alias usb2='sudo mount -t vfat -o uid=paul,gid=pi /dev/sda2 /media/usbstick/'
 alias vi='vim'
 alias website='pushd /var/www'
-alias why='python /home/paul/Programming/python/why/why.py'
-alias why?='python /home/paul/Programming/python/why/why.py'
+alias what='PS1="${CYAN}what? ${GRAY}"'
+alias why='python2 /home/paul/Programming/python/why/why.py'
+alias why?='python2 /home/paul/Programming/python/why/why.py'
 # learn more and download wego from github.com/schachmat/wego
 alias weather='/home/paul/Programming/Go/wego/bin/wego'
 alias wego='/home/paul/Programming/Go/wego/bin/wego'
