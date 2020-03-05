@@ -74,7 +74,7 @@ GREEN='\[\033[0;32m\]'
 PURPLE='\[\033[0;35m\]'
 RED='\e[0;31m'
 
-curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A 5 \<td\> | sed 's/<[^>]\+>//g' | cowsay -f dalek
+curl -s https://en.wikiquote.org/wiki/Template:QoD | grep -A 5 \<td\> | sed 's/<[^>]\+>//g' | cowsay -f yoda
 echo -e "$CYAN"
 
 echo
@@ -133,6 +133,10 @@ function ia-save() {
     grep Content-Location |
     awk '{printf( "https://web.archive.org%s\n",$2)}';
 }
+
+# Jake told me "I love it. Kind of indispensable" about this:
+# https://github.com/rupa/z
+. /home/paul/Programming/Linux/z/z.sh
 
 # Alias definitions.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
