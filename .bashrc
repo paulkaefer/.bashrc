@@ -149,7 +149,8 @@ fi
 #    colors: http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 # was >> (like MATLAB) until I changed PuTTY's settings to be able to use λ
 # other characters: →
-PS1="${GREEN}\u ${GRAY}\w ${PURPLE}λ ${GRAY}"
+# see also http://bashrcgenerator.com/
+PS1="\n${GRAY}\d \T\n${GREEN}\u ${GRAY}\w ${PURPLE}λ ${GRAY}"
 
 # make man use color:
 export PAGER=most
