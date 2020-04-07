@@ -1,3 +1,7 @@
+# eliminates warning on Catalina re: switching to zsh
+# via https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # added by Anaconda3 2019.10 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
