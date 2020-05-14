@@ -88,6 +88,8 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 alias usb='sudo mount -t vfat -o uid=paul,gid=pi /dev/sda /media/usbstick/'
 alias usb1='sudo mount -t vfat -o uid=paul,gid=pi /dev/sda1 /media/usbstick/'
 alias usb2='sudo mount -t vfat -o uid=paul,gid=pi /dev/sda2 /media/usbstick/'
+# since I often forget these:
+alias version='uname -a && echo " " && lsb_release -a'
 alias vi='vim'
 alias website='pushd /var/www'
 alias what='PS1="${CYAN}what? ${GRAY}"'
