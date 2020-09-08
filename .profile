@@ -28,3 +28,10 @@ export PATH
 # and http://www.troubleshooters.com/linux/prepostpath.htm
 # for more information
 
+# via https://help.dreamhost.com/hc/en-us/articles/360001435926-Installing-OpenSSL-locally-under-your-username
+# due to pip error mentioned at https://help.dreamhost.com/hc/en-us/articles/115000702772-Installing-a-custom-version-of-Python-3
+export PATH=$HOME/openssl/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/openssl/lib
+export LC_ALL="en_US.UTF-8"
+export LDFLAGS="-L/home/paul/openssl/lib -Wl,-rpath,/home/paul/openssl/lib"
+
