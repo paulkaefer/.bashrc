@@ -1,0 +1,8 @@
+# https://www.reddit.com/r/DataHoarder/comments/akgrow/psa_make_sure_you_include_these_flags_in_your/
+--add-metadata
+--write-all-thumbnails
+--embed-thumbnail
+--write-info-json
+--embed-subs
+--all-subs
+
