@@ -81,6 +81,7 @@ alias snake='telnet telnet.bitlag.net'
 alias sprunge='curl -F '"'"'sprunge=<-'"'"' http://sprunge.us'
 # escape character is x (not CTRL+X)
 alias starwars='telnet -e x towel.blinkenlights.nl'
+alias sts='aws sts get-caller-identity'
 alias su='sudo -i'
 alias u='uptime && users'
 alias unmount='umount'
