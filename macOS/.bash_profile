@@ -19,6 +19,19 @@ fi
 unset __conda_setup
 # <<< conda init <<<
 
+# git/GitHub aliases:
+alias ga='git add'
+alias gc='git commit'
+alias gd='git diff'
+alias gf='git fetch'
+alias gfo='git fetch origin'
+# since gp is already `git pull`, use gg (think "git get"!)
+alias gg='git pull'
+alias gp='git push'
+alias gpo='git push origin'
+alias gpom='git push origin main'
+alias gs='git status -sb'
+
 CYAN='\e[0;36m\]'
 GRAY='\[\033[0m\]'
 GREEN='\[\033[0;32m\]'
@@ -34,3 +47,4 @@ function RGBcolor {
 ORANGE=$(RGBcolor 5 3 0)  # Bright orange.
 
 PS1="${GREEN}\u ${GRAY}\w ${RED}λ ${GRAY}"
+

@@ -8,6 +8,19 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# git/GitHub aliases:
+alias ga='git add'
+alias gc='git commit'
+alias gd='git diff'
+alias gf='git fetch'
+alias gfo='git fetch origin'
+# since gp is already `git pull`, use gg (think "git get"!)
+alias gg='git pull'
+alias gp='git push'
+alias gpo='git push origin'
+alias gpom='git push origin main'
+alias gs='git status -sb'
+
 alias ..='cd ..'
 #alias 4 8 15 16 23 42="reload"
 alias bomb='echo ${bashForkBomb}'
