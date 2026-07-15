@@ -5,4 +5,5 @@
 --write-info-json
 --embed-subs
 --all-subs
+--cookies-from-browser firefox
 
