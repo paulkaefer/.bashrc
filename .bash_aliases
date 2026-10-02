@@ -9,6 +9,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # git/GitHub aliases:
+alias commits='git log | grep "Author: " | wc -l'
 alias ga='git add'
 alias gc='git commit'
 alias gd='git diff'

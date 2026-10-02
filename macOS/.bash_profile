@@ -20,6 +20,7 @@ unset __conda_setup
 # <<< conda init <<<
 
 # git/GitHub aliases:
+alias commits='git log | grep "Author: " | wc -l'
 alias ga='git add'
 alias gc='git commit'
 alias gd='git diff'
