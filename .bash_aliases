@@ -10,6 +10,7 @@ fi
 
 # git/GitHub aliases:
 alias commits='git log | grep "Author: " | wc -l'
+alias g='git'
 alias ga='git add'
 alias gc='git commit'
 alias gd='git diff'
